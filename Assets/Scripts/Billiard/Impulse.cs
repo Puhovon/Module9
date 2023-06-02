@@ -1,5 +1,3 @@
-using System;
-using Unity.VisualScripting;
 using UnityEngine;
 
 namespace Assets.Scripts.Billiard
@@ -10,7 +8,7 @@ namespace Assets.Scripts.Billiard
         [SerializeField] private Vector3 end;
         [SerializeField] private float speed;
 
-        void Start()
+        private void Start()
         {
 
             //Получаем ссылку на Rigidbody

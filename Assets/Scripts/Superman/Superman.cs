@@ -1,6 +1,4 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Superman : MonoBehaviour
@@ -8,7 +6,7 @@ public class Superman : MonoBehaviour
     [SerializeField] private Transform endPoint;
     [SerializeField] private int power, speed;
 
-    void Update()
+    private void Update()
     {
         transform.position = Vector3.MoveTowards(transform.position, endPoint.position, speed * Time.deltaTime);
     }
